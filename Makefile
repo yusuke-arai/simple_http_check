@@ -7,7 +7,7 @@ BIN=bin/simple_http_check
 all: $(BIN)
 
 bin/simple_http_check: $(SOURCES)
-	mkdir bin
+	mkdir -p bin
 	$(CC) -o $(BIN) $(CFLAGS) $(LDFLAGS) $(SOURCES)
 
 clean:
