@@ -78,5 +78,7 @@ int main(int argc, char **argv)
 
     char *url = argv[optind];
     request(url, timeout);
+
+    return 0;
 }
 
