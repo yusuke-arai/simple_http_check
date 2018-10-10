@@ -51,6 +51,11 @@ int request(const char *url, const long timeout)
     printf(",\"start_transfer\":%.2f", timep * 1000.0);
     curl_easy_getinfo(handle, CURLINFO_TOTAL_TIME, &timep);
     printf(",\"total\":%.2f", timep * 1000.0);
+
+    long response_code;
+    curl_easy_getinfo(handle, CURLINFO_RESPONSE_CODE, &response_code);
+    printf(",\"response_code\":%ld", response_code);
+
     printf("}");
     curl_easy_cleanup(handle);
     return res;
