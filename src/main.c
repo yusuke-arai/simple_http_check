@@ -31,7 +31,6 @@ int request(const char *url, const long timeout)
     handle = curl_easy_init();
 
     curl_easy_setopt(handle, CURLOPT_URL, url);
-    curl_easy_setopt(handle, CURLOPT_HTTP_VERSION, CURL_HTTP_VERSION_2_0);
     curl_easy_setopt(handle, CURLOPT_WRITEFUNCTION, write_callback); // discard the response
     curl_easy_setopt(handle, CURLOPT_TIMEOUT_MS, timeout);
     res = curl_easy_perform(handle);
