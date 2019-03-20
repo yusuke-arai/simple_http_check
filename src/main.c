@@ -18,7 +18,7 @@ void print_usage()
         "     simple_http_check URL\n"
         "\n" 
         "DESCRIPTION\n"
-        "     -f timeout_ms     Timeout in milliseconds.\n"
+        "     -t timeout_ms     Timeout in milliseconds.\n"
         "\n" 
     );
 }
