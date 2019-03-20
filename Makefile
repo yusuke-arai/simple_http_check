@@ -1,4 +1,4 @@
-CC=gcc
+CC=cc
 CFLAGS=-Wall -O2
 LDFLAGS=-lcurl
 SOURCES=src/main.c
